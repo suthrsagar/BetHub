@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="checkLogin()">
+    <h1>🎰 Online Betting Game</h1>
+
+    <div class="wallet">
+        <h2>Wallet Balance: ₹<span id="wallet-balance">0</span></h2>
+        <button onclick="addMoneyUPI()">➕ Add Money</button>
+        <button onclick="logout()">🚪 Logout</button>
+    </div>
+
+    <div class="bet-section">
+        <h2>Place Your Bet</h2>
+        <input type="number" id="amount" placeholder="Enter Bet Amount">
+        <button onclick="placeBet()">🎲 Bet Now</button>
+        <p id="result-message"></p>
+    </div>
+</body>
+</html>
